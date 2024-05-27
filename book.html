@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ValidationForm for book</title>
+    <link rel="stylesheet" href="CSS/book.css">
+</head>
+<body>
+    <h1>Enter your data form for Books</h1>
+    <div class="wrap">
+        <form action="#">
+            <div class="form_group">
+                <label for="Btitle">Book_Title</label>
+                <input type="text" id="Btitle" name="Book_Title" required>   
+            </div>
+            <div class="form_group">
+                <label for="AuthorName">Author_Name</label>
+                <input type="text" id="Au_Name" name="Author_Name" required>   
+            </div>
+            <div class="form_group">
+                <label for="ISBN">ISBN_NUMBER</label>
+                <input type="text" id="ISBN_NUMBER" name="ISBN_NUMBER" required>   
+            </div>
+            <div class="form_group">
+                <label for="Pub_yr">Publication_year</label>
+                <input type="number" id="Pub_yr" name="Pub_yr" required>   
+            </div>
+            <div class="form_group">
+                <label for="edition">Edition</label>
+                <input type="number" id="edt" name="edt" required>   
+            </div>
+            <div class="form_group">
+                <label for="lang">Language</label>
+                <input type="text" id="lang" name="Language" required>
+            </div>    
+            <div class="form_group">
+                <label for="copy_avail">Copy_Available</label>
+                <input type="number" id="copy_avail" name="copy_avail" required> 
+            </div>
+            <div class="form_group">
+                <label for="shelf">Shelf_Location</label>
+                <input type="text" id="shelf_location" name="shelf_location" required> 
+            </div>
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Submit</button>
+              </div> 
+              <button type="button" class="btn" onclick="window.location.href='index.html'">Back</button>   
+        </form>
+    </div>
+    
+</body>
+</html>

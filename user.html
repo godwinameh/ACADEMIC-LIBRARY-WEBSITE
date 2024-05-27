@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validation Form user</title>
+  <link rel="stylesheet" href="CSS/user.css">
+</head>
+<body>
+  <h1>ValidationForm for data collection for users</h1>
+
+<div class="form-container">
+
+  <form action="#">
+ 
+    <div class="form-group">
+      <label for="firstname">First Name:</label>
+       <input type="text" id="FName" name="FName" pattern="[a-zA-Z]+"  required> 
+    </div>
+    <div class="form-group">
+      <label for="fname">last Name:</label>
+       <input type="text" id="LName" name="LName" required pattern="[A-Za-z\s]+"> 
+    </div>
+    <div class="form-group">
+      <label for="lastName">User_Types:</label>
+      <input type="text" id="lastName" name="lastName" required >
+    </div>
+    <div class="form-group">
+      <label for="datemax">Enter Date</label>
+      <input type="date" id="datemax" name="datemax" max="2024-12-31" required>
+    </div>
+    <div class="form-group">
+      <label for="phoneNumber">phoneNumber:</label>
+      <input type="tel" name="mobilephone" required pattern="+23480">
+    </div>
+    <div class="form-group">
+      <label for="Address">ContactAddress:</label>
+      <input type="text" id="Address" name="Address" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" required   pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+    </div>
+    <div class="form-group">
+      <button type="submit" class="submit-btn">Submit</button>
+    </div> 
+    <button type="button" class="btn" onclick="window.location.href='index.html'">Back</button>
+  </form>
+</div>
+
+</body>
+</html>
